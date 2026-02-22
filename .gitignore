@@ -1,0 +1,65 @@
+# ----------------------------
+# Python cache / builds
+# ----------------------------
+__pycache__/
+*.py[cod]
+*$py.class
+.pytest_cache/
+.mypy_cache/
+.ruff_cache/
+.coverage
+htmlcov/
+dist/
+build/
+*.egg-info/
+
+# ----------------------------
+# Virtual environments
+# ----------------------------
+venv/
+.venv/
+
+# ----------------------------
+# Secrets / environment files
+# ----------------------------
+.env
+.env.*
+*.pem
+*.key
+
+# ----------------------------
+# OS / Editor files
+# ----------------------------
+.DS_Store
+Thumbs.db
+.vscode/
+.idea/
+
+# ----------------------------
+# Streamlit cache / local state
+# ----------------------------
+.streamlit/
+.streamlit/secrets.toml
+
+# ----------------------------
+# Project-specific generated artifacts (DO NOT COMMIT)
+# ----------------------------
+# Chroma vector DB (generated locally)
+data/vector_store/
+
+# Local audit logs (generated locally)
+data/audit_logs.jsonl
+data/audit_logs.jsonl*
+
+# create JSON logs too
+data/audit_logs.json
+
+# Raw data folder (if it contains PDFs / large files)
+data/raw/
+
+# ----------------------------
+# ignore large local model files (only if you store weights here)
+# ----------------------------
+models/
+
+https://github.com/kuduguntiviswajit/regulatory_compliant-auditor-.git
